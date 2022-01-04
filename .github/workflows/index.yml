@@ -2,7 +2,7 @@ name: Update Algolia index with BGG data
 
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
+    - cron: '0 10 * * *' # Runs every day at 10 AM
   workflow_dispatch:
 jobs:
   index:
